@@ -1,0 +1,5 @@
+Most Interesting section for cyber security company (in my opinion) might be "Market Section" and all of threads interfaces
+As a employee user goes to this section to search for a job and therefore he might share personal information. Personal information may be used to social networking
+Promise opportunity for position in exchange to some actions on behalf of malefactor.
+In threads interface user often share links, buttons, files. File might be trojans or other binary code that contains exploits, buttons and links may redirect to fishing pages and e.t.c
+Fraud detection and attack preservation can be performed in each interface, Caution heading texts, warnings emails that may contain methods how not to be a victim
