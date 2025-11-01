@@ -13,7 +13,7 @@ if __name__ == '__main__':
     topic_titles = bk.get_article_title(forum_page_content);
     topic_reference = {k: topic_titles[k] for k in range(len(topic_titles)-1)}
 
-    for index in range(len(topic_links) -1):
+    for index in range(len(topic_links) - 1):
 
         topic_response = bk.go_to(topic_links[index])
         topic_content = bk.extract_text(topic_response)

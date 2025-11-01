@@ -24,7 +24,8 @@ class BlastForum:
     def go_to(self, url: str = '/'):
         return self._request(url)
 
-    def extract_text(self, contents: Response) -> str:
+    @staticmethod
+    def extract_text(contents: Response) -> str:
         return contents.text;
 
     def _get_groups(self, pattern: str, page_html: str):
