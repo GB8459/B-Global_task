@@ -11,13 +11,13 @@ if __name__ == '__main__':
     forum_page_content = bk.extract_text(forum_page);
     topic_links = bk.get_topic_links(forum_page_content);
     topic_titles = bk.get_article_title(forum_page_content);
-    topic_reference = {k: topic_titles[k-1] for k in range(1, len(topic_titles)+1)}
+    topic_reference = {k: topic_titles[k] for k in range(len(topic_titles)-1)}
 
-    for index in range(1, len(topic_links) + 1):
+    for index in range(len(topic_links) -1):
 
-        topic_response = bk.go_to(topic_links[index-1])
+        topic_response = bk.go_to(topic_links[index])
         topic_content = bk.extract_text(topic_response)
-        topic_last_page_link = bk.get_last_page_link(topic_links[index-1],topic_content)
+        topic_last_page_link = bk.get_last_page_link(topic_links[index],topic_content)
         if topic_last_page_link:
             topic_last_page_response = bk.go_to(topic_last_page_link[0])
             topic_content = bk.extract_text(topic_last_page_response)
